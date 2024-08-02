@@ -1,13 +1,119 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Exam CV</title>
   </head>
   <body>
     <div id="app"></div>
+    <div class="resume">
+      <section class="profile_box box">
+        <img 
+        class="profile_box__avatar" 
+        loading="lazy"
+        alt="avatar"
+        src="/avatar-svgrepo-com.svg">
+        <article class="profile_box__info">
+          <p class="profile_box__info__greeting" contenteditable="true"> Hey you</p>
+          <p class="profile_box__info__name" contenteditable="true">Moiseenko Marina</p>
+          <p class="profile_box__info__job" contenteditable="true">Junior Frontend Developer</p>
+        </article>
+        <article class="profile_box__lang">
+          <h3 class="section_article">Languages</h3>
+          <div>
+            <div>
+              <h4>English</h4>
+              <input class="slider" type="range" id="slider" min="0" max="100" value="50">
+            </div>
+            <div>
+              <h4>Russian</h4>
+              <input class="slider" type="range" id="slider" min="0" max="100" value="100">
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="experince_box box">
+        <h3 class="section_article">Experience</h3>
+        <article class="experince_box__job recent">
+          <div><p>Jun. 2023 - Present</p>
+          <label>most recent</label></div>
+          <div class="content">
+            <div class="left-column">
+                <div class="job-title">Marketing Manager</div>
+                <div class="company-info">XYZ | Full time</div>
+            </div>
+            <div class="">
+                <div class="duties">
+                    <ul>
+                        <li>Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
+                        <li>SEO Content Creation for Blogs, Website, Social media</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </article>
+        <article class="experince_box__job">
+          <p>Jun. 2023 - Present</p>
+            <div class="content">
+              <div class="left-column">
+                  <div class="job-title">Marketing Manager</div>
+                  <div class="company-info">XYZ | Full time</div>
+              </div>
+              <div class="">
+                  <div class="duties">
+                      <ul>
+                          <li>Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
+                          <li>SEO Content Creation for Blogs, Website, Social media</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </article>
+      </section>
+      <section class="tools_box box">
+        <h3 class="section_article">Tools</h3>
+        <article></article>
+        <article></article>
+      </section>
+      <section class="education_box box">
+        <h3 class="section_article">Education</h3>
+        <article class="education_box__course recent">2023</article>
+        <article class="education_box__course">2020</article>
+      </section>
+      <section class="interest_box box">
+        <h3 class="section_article">Interests</h3>
+        <ul class="interest_list">
+          <li class="interest_item">web development</li>
+          <li class="interest_item">UI/UX design</li>
+          <li class="interest_item">self-study</li>
+          <li class="interest_item">FP</li>
+          <li class="interest_item">OOP</li>
+          <li class="interest_item">Redux</li>
+          <li class="interest_item">Angular</li>
+          <li class="interest_item">React</li>
+          <li class="interest_item">Vue3</li>
+          <li class="interest_item">JavaScript</li>
+        </ul>
+      </section>
+      <section class="contacts_box">
+        <p class="contacts_box__text">Let's chat! I'm ready to work on exciting projects</p>
+        <p class="contacts_box__email">email</p>
+      </section>
+      
+      <button id="download">Скачать PDF</button>
+    </div>
     <script type="module" src="./js/main.js"></script>
+    <script>
+      const rangeInput = document.getElementById('slider');
+      function updateRange() {
+          const value = (rangeInput.value - rangeInput.min) / (rangeInput.max - rangeInput.min) * 100;
+          rangeInput.style.setProperty('--value', value + '%');
+      }
+  
+      rangeInput.addEventListener('input', updateRange);
+      updateRange();</script>
   </body>
 </html>
