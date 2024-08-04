@@ -1,8 +1,13 @@
-import "../css/style.css";
-import { updateRange } from "./slider.js";
 import { getPDFResume } from "./getPDF.js";
 
 getPDFResume();
+
+export function updateRange(rangeInput) {
+  const value =
+      ((rangeInput.value - rangeInput.min) / (rangeInput.max - rangeInput.min)) *
+      100;
+  rangeInput.style.setProperty("--value", value + "%");
+}
 
 const rangeInputs = document.querySelectorAll(".slider");
 
