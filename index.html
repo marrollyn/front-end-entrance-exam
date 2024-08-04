@@ -1,150 +1,199 @@
-<!doctype html>
-<html lang="ru en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exam CV</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <div class="resume">
-      <section class="profile_box box">
-        <img 
-        class="profile_box__avatar" 
-        loading="lazy"
-        alt="avatar"
-        src="/avatar-svgrepo-com.svg">
-        <article class="profile_box__info">
-          <p class="profile_box__info__greeting" contenteditable="true"> Hey you</p>
-          <p class="profile_box__info__name" contenteditable="true">Moiseenko Marina</p>
-          <p class="profile_box__info__job" contenteditable="true">Junior Frontend Developer</p>
-        </article>
-        <article class="profile_box__lang">
-          <h3 class="section_article">Languages</h3>
-          <div>
-            <div>
-              <p>English</p>
-              <input class="slider" type="range" id="slider" min="0" max="100" value="50">
-            </div>
-            <div>
-              <p>Russian</p>
-              <input class="slider" type="range" id="slider" min="0" max="100" value="100">
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="experince_box box">
-        <h3 class="section_article">Experience</h3>
-        <article class="experince_box__job recent">
-          <div><p>Jun. 2023 - Present</p>
-          <label>most recent</label></div>
-          <div class="content">
-            <div class="left-column">
-                <div class="job-title">Marketing Manager</div>
-                <div class="company-info">XYZ | Full time</div>
-            </div>
-            <div class="">
-                <div class="duties">
-                    <ul>
-                        <li>Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
-                        <li>SEO Content Creation for Blogs, Website, Social media</li>
-                    </ul>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam CV</title>
+</head>
+
+<body>
+  <div class="resume">
+    <section class="profile_box box">
+      <img class="profile_box__avatar" loading="lazy" alt="avatar" src="/avatar-svgrepo-com.svg">
+      <article class="profile_box__info">
+        <p contenteditable="true" class="profile_box__info__greeting"> Hey there, it's 👇🏻</p>
+        <p contenteditable="true" class="profile_box__info__name">Moiseenko Marina</p>
+        <p contenteditable="true" class="profile_box__info__job">Junior Frontend Developer</p>
+      </article>
+      <article class="profile_box__lang">
+        <h3 class="section_article">Languages</h3>
+
+        <div class="lang_box">
+          <p contenteditable="true">English</p>
+          <input class="slider" type="range" min="0" max="100" value="50">
         </div>
-        </article>
-        <article class="experince_box__job">
-          <p>Jun. 2023 - Present</p>
-            <div class="content">
-              <div class="left-column">
-                  <div class="job-title">Marketing Manager</div>
-                  <div class="company-info">XYZ | Full time</div>
-              </div>
-              <div class="">
-                  <div class="duties">
-                      <ul>
-                          <li>Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
-                          <li>SEO Content Creation for Blogs, Website, Social media</li>
-                      </ul>
-                  </div>
-              </div>
+        <div class="lang_box">
+          <p contenteditable="true">Russian</p>
+          <input class="slider" type="range" min="0" max="100" value="100">
+        </div>
+      </article>
+    </section>
+    <section class="experience_box box">
+      <h3 class="section_article">Experience</h3>
+      <article class="experience_box__job recent">
+        <div class="experience_label_box">
+          <p class="experience_period" contenteditable="true">Jul. 2024 - Present</p>
+          <label class="experience_box__label">most recent</label>
+        </div>
+        <div class="content">
+          <div class="left-column">
+            <p contenteditable="true" class="job-title">Frontend Intern</p>
+            <p contenteditable="true" class="company-info">MSU | Project</p>
           </div>
-        </article>
-      </section>
-      <section class="tools_box box">
-        <h3 class="section_article">Tools</h3>
-        <article class="tools_article">
-          <label class="tools_label">design</label>
-          <ul>
-            <li class="tools_item"><img src="/logoFigma.svg" alt="figma logo" class="tools_img"></li>
-            <li><img src="/icon_adobe_photoshop.svg" alt="ps logo"></li>
-            <li><img src="/icon_adobe_illustrator.svg" alt="ai logo"></li>
-            <li><img src="/icon_adobe_premiere.svg" alt="pr logo"></li>
-            <li><img src="/logoNotion.svg" alt="notion logo"></li>
-            <li><img src="/logoMeet.svg" alt="meet logo"></li>
-          </ul>
-        </article>
-        <article class="tools_article">
-          <label class="tools_label">no-code</label>
-          <ul>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-          </ul>
-        </article>
-        <article class="tools_article">
-          <label class="tools_label">artoficial intelligence</label>
-          <ul>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-            <li>cc<img src="" alt=""></li>
-          </ul>
-        </article>
-      </section>
-      <section class="education_box box">
-        <h3 class="section_article">Education</h3>
-        <article class="education_box__course recent">2023</article>
-        <article class="education_box__course">2020</article>
-      </section>
-      <section class="interest_box box">
-        <h3 class="section_article">Interests</h3>
-        <ul class="interest_list">
-          <li class="interest_item">web development</li>
-          <li class="interest_item">UI/UX design</li>
-          <li class="interest_item">self-study</li>
-          <li class="interest_item">FP</li>
-          <li class="interest_item">OOP</li>
-          <li class="interest_item">Redux</li>
-          <li class="interest_item">Angular</li>
-          <li class="interest_item">React</li>
-          <li class="interest_item">Vue3</li>
-          <li class="interest_item">JavaScript</li>
+          <div class="">
+            <div class="duties">
+              <ul>
+                <li contenteditable="true">layout of the page layout by design</li>
+                <li contenteditable="true">creating components</li>
+                <li contenteditable="true">bugs fix</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="experience_box__job">
+        <p class="experience_period">Apr. 2015 - Present</p>
+        <div class="content">
+          <div class="left-column">
+            <p contenteditable="true" class="job-title">Head of Docflow Office</p>
+            <p contenteditable="true" class="company-info">ITMO | Full time</p>
+          </div>
+          <div class="">
+            <div class="duties">
+              <ul>
+                <li contenteditable="true">organization of document management in the company</li>
+                <li contenteditable="true">ensuring the functioning of the department, which employed up to 15 people
+                </li>
+                <li contenteditable="true">reception of visitors on issues related to the activities of the department
+                </li>
+                <li contenteditable="true">working with citizens' appeals</li>
+                <li contenteditable="true">methodological guidance and consulting of employees</li>
+                <li contenteditable="true">conducting audits in structural divisions on relevant issues
+                </li>
+                <li contenteditable="true">conducting negotiations and business correspondence with authorities and
+                  organizations
+                </li>
+                <li contenteditable="true">development and implementation of local regulations
+                </li>
+                <li contenteditable="true">implementation and maintenance of an internal corporate electronic document
+                  management system,
+                  including the description, routing and optimization of business processes, as well as the development
+                  of technical specifications</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="tools_box box">
+      <h3 class="section_article">Tools</h3>
+      <article class="tools_article">
+        <label class="tools_label">design</label>
+        <ul class="tools__list">
+          <li class="tools_item"><img src="/logoFigma.svg" alt="figma logo" class="tools_img"></li>
+          <li><img src="/icon_adobe_photoshop.svg" alt="ps logo"></li>
+          <li><img src="/icon_adobe_illustrator.svg" alt="ai logo"></li>
+          <li><img src="/icon_adobe_premiere.svg" alt="pr logo"></li>
+          <li><img src="/logoNotion.svg" alt="notion logo"></li>
+          <li><img src="/logoMeet.svg" alt="meet logo"></li>
         </ul>
-      </section>
-      <section class="contacts_box">
-        <p class="contacts_box__text">Let's chat! I'm ready to work on exciting projects</p>
-        <p class="contacts_box__email">email</p>
-      </section>
-      
-      <button id="download">Скачать PDF</button>
-    </div>
-    <script type="module" src="./js/main.js"></script>
-    <script>
-      const rangeInput = document.getElementById('slider');
-      function updateRange() {
-          const value = (rangeInput.value - rangeInput.min) / (rangeInput.max - rangeInput.min) * 100;
-          rangeInput.style.setProperty('--value', value + '%');
-      }
-  
-      rangeInput.addEventListener('input', updateRange);
-      updateRange();</script>
-  </body>
+      </article>
+      <article class="tools_article">
+        <label class="tools_label">no-code</label>
+        <ul class="tools__list">
+          <li><img src="/logoZapier.svg" alt="Zapier logo"></li>
+          <li><img src="/logoWebflow.svg" alt="Webflow logo"></li>
+          <li><img src="/logoFramer.svg" alt="Framer logo"></li>
+          <li><img src="/logoWordpress.svg" alt="Wordpress logo"></li>
+        </ul>
+      </article>
+      <article class="tools_article">
+        <label class="tools_label artificial">artificial intelligence</label>
+        <ul class="tools__list">
+          <li><img src="/logoChatGPT.svg" alt="ChatGPT logo"></li>
+          <li><img src="/logoCopilot.svg" alt="Copilot logo"></li>
+          <li><img src="/logoMidjourney.svg" alt="Midjourney logo"></li>
+        </ul>
+      </article>
+    </section>
+    <section class="education_box box">
+      <h3 class="section_article">Education</h3>
+      <div class="education_box_flex">
+        <article class="education_box__course recent">
+          <label class="education_box_label">
+            <img src="/Vector.svg" alt="favorite logo"/>
+          </label>
+          <p contenteditable="true" class="course_year">2023</p>
+          <p contenteditable="true" class="course_name">Frontend development</p>
+          <ul class="course_skill_list">
+            <li contenteditable="true" class="course_skill_item">#CSS</li>
+            <li contenteditable="true" class="course_skill_item">#JavaScript</li>
+            <li contenteditable="true" class="course_skill_item">#HTML</li>
+            <li contenteditable="true" class="course_skill_item">#SCSS</li>
+          </ul>
+          <p contenteditable="true" class="course_place">PRACTICUM</p>
+        </article>
+        <article class="education_box__course">
+          <p contenteditable="true" class="course_year">2023</p>
+          <p contenteditable="true" class="course_name">Translation studies</p>
+          <ul class="course_skill_list">
+            <li contenteditable="true" class="course_skill_item">#technicalTranslation</li>
+            <li contenteditable="true" class="course_skill_item">#artisticTranslation</li>
+            <li contenteditable="true" class="course_skill_item">#legalTranslation</li>
+          </ul>
+          <p contenteditable="true" class="course_place">RANHIGS</p>
+        </article>
+        <article class="education_box__course">
+          <p contenteditable="true" class="course_year">2016</p>
+          <p contenteditable="true" class="course_name">Computer science</p>
+          <ul class="course_skill_list">
+            <li contenteditable="true" class="course_skill_item">#theoryOfAutomaticControl</li>
+            <li contenteditable="true" class="course_skill_item">#Matlab</li>
+            <li contenteditable="true" class="course_skill_item">#C++</li>
+          </ul>
+          <p contenteditable="true" class="course_place">ITMO</p>
+        </article>
+      </div>
+    </section>
+    <section class="interest_box box">
+      <h3 class="section_article">Interests</h3>
+      <ul class="interest_list">
+        <li contenteditable="true" class="interest_item">web development</li>
+        <li contenteditable="true" class="interest_item">UI/UX design</li>
+        <li contenteditable="true" class="interest_item">self-study</li>
+        <li contenteditable="true" class="interest_item">FP</li>
+        <li contenteditable="true" class="interest_item">OOP</li>
+        <li contenteditable="true" class="interest_item">Redux</li>
+        <li contenteditable="true" class="interest_item">Angular</li>
+        <li contenteditable="true" class="interest_item">React</li>
+        <li contenteditable="true" class="interest_item">Vue3</li>
+        <li contenteditable="true" class="interest_item">JavaScript</li>
+        <li contenteditable="true" class="interest_item">Redux</li>
+        <li contenteditable="true" class="interest_item">SQL</li>
+        <li contenteditable="true" class="interest_item">MobX</li>
+        <li contenteditable="true" class="interest_item">REST API</li>
+        <li contenteditable="true" class="interest_item">Jest</li>
+        <li contenteditable="true" class="interest_item">Cypress</li>
+        <li contenteditable="true" class="interest_item">Webpack</li>
+        <li contenteditable="true" class="interest_item">Vite</li>
+        <li contenteditable="true" class="interest_item">Gulp</li>
+        <li contenteditable="true" class="interest_item">Figma</li>
+        <li contenteditable="true" class="interest_item">Pixso</li>
+        <li contenteditable="true" class="interest_item">soft skills</li>
+        <li contenteditable="true" class="interest_item">hard skills</li>
+      </ul>
+    </section>
+    <section class="contacts_box">
+      <p contenteditable="true" class="contacts_box__text">Let's chat! I'm ready to work on exciting projects</p>
+      <p contenteditable="true" class="contacts_box__email">email: marina.moiseenko@list.ru</p>
+    </section>
+    <button id="download">Скачать PDF</button>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+  <script>
+  </script>
+</body>
+
 </html>
